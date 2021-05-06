@@ -3,7 +3,7 @@
         <div class="header">
             <h1>{{ msg }}</h1>
             <p>What would you like to do?</p>
-            <div id="menu-options">
+            <div class="menu-options">
                 <a href="/write" data-ajax="false">Write</a> |
                 <a href="/read">Read</a>
             </div>
@@ -28,8 +28,10 @@
         margin-top: 60px;
         text-align: center;
     }
-    #menu-options {
-        color: #42b983;
+    .menu-options > a {
+        /*color: #42b983;*/
         margin: 20px;
     }
+
+    @import "CSS/main.css";
 </style>
