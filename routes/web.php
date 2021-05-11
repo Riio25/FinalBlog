@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/write', [BlogController::class, 'writeIndex']);
+Route::post('/write/submit', [BlogController::class, 'submitBlog']);
+
+Route::get('/read', [BlogController::class, 'readIndex']);
+
+Route::get('/register', [UserController::class, 'registerIndex']);
+Route::post('/register/submit', [UserController::class, 'registerUser']);
+
+Route::get('/login', [UserController::class, 'loginIndex']);

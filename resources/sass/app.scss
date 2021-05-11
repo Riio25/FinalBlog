@@ -4,11 +4,8 @@
 @import 'tailwindcss/utilities';
 @import '_variables.scss';
 
-.menu-options {
-    color: $red;
-}
+
 a:visited{
-    color: $green;
     text-decoration: none;
 }
 

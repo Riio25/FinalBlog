@@ -1,11 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.menu-options {
-  color: red;
-}
-
 a:visited {
-  color: green;
   text-decoration: none;
 }

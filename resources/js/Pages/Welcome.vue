@@ -1,4 +1,5 @@
 <template>
+    <nav></nav>
     <div class="content">
         <div class="header">
             <h1>{{ msg }}</h1>
@@ -13,8 +14,10 @@
 </template>
 
 <script>
+    import Nav from '@/Shared/Nav.vue'
+
     export default {
-        computed: {},
+        components: Nav,
         data(){
             return {
                 msg: "Welcome to Riio's Blog"
