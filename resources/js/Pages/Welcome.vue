@@ -1,5 +1,4 @@
 <template>
-    <nav></nav>
     <div class="content">
         <div class="header">
             <h1>{{ msg }}</h1>
@@ -14,10 +13,10 @@
 </template>
 
 <script>
-    import Nav from '@/Shared/Nav.vue'
+    import MyLayout from '@/Layouts/MyLayout.vue'
 
     export default {
-        components: Nav,
+        layout: MyLayout,
         data(){
             return {
                 msg: "Welcome to Riio's Blog"
