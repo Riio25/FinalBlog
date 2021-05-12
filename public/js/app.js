@@ -23246,7 +23246,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_use_1_public_css_main_css__WEBPACK_IMPORTED_MODULE_1__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.content[data-v-317d1a6e] {\n        margin-top: 60px;\n        text-align: center;\n}\n.menu-options > a[data-v-317d1a6e] {\n        /*color: #42b983;*/\n        margin: 20px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.content[data-v-317d1a6e] {\r\n        margin-top: 60px;\r\n        text-align: center;\n}\n.menu-options > a[data-v-317d1a6e] {\r\n        /*color: #42b983;*/\r\n        margin: 20px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23270,7 +23270,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#write[data-v-12a4d086] {\n        font-family: Avenir, Helvetica, Arial, sans-serif;\n        -webkit-font-smoothing: antialiased;\n        -moz-osx-font-smoothing: grayscale;\n        text-align: center;\n        color: #2c3e50;\n}\n.content[data-v-12a4d086]{\n        text-align: center;\n}\ninput[data-v-12a4d086] {\n        margin-bottom: 15px;\n        width: 200px;\n}\ntextarea[data-v-12a4d086] {\n        display: block;\n        margin: 0 auto;\n        resize: none;\n}\nbutton[data-v-12a4d086] {\n        margin-top: 15px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#write[data-v-12a4d086] {\r\n        font-family: Avenir, Helvetica, Arial, sans-serif;\r\n        -webkit-font-smoothing: antialiased;\r\n        -moz-osx-font-smoothing: grayscale;\r\n        text-align: center;\r\n        color: #2c3e50;\n}\n.content[data-v-12a4d086]{\r\n        text-align: center;\n}\ninput[data-v-12a4d086] {\r\n        margin-bottom: 15px;\r\n        width: 200px;\n}\ntextarea[data-v-12a4d086] {\r\n        display: block;\r\n        margin: 0 auto;\r\n        resize: none;\n}\nbutton[data-v-12a4d086] {\r\n        margin-top: 15px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23294,7 +23294,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#nav-menu {\n        font-family: Avenir, Helvetica, Arial, sans-serif;\n        -webkit-font-smoothing: antialiased;\n        -moz-osx-font-smoothing: grayscale;\n        text-align: center;\n        color: #2c3e50;\n}\n.nav {\n        position: fixed;\n        top: 0;\n        left: 0;\n        padding-top: 10px;\n        width: 100%;\n}\n.nav a {\n        font-weight: bold;\n        color: #2c3e50;\n}\n.nav-options {\n        float: right;\n        margin: 0 20px;\n        text-decoration: none;\n        padding: 10px;\n}\na:hover {\n        text-decoration: underline;\n        background-color: lightgrey;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#nav-menu {\r\n        font-family: Avenir, Helvetica, Arial, sans-serif;\r\n        -webkit-font-smoothing: antialiased;\r\n        -moz-osx-font-smoothing: grayscale;\r\n        text-align: center;\r\n        color: #2c3e50;\n}\n.nav {\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        padding-top: 10px;\r\n        width: 100%;\n}\n.nav a {\r\n        font-weight: bold;\r\n        color: #2c3e50;\n}\n.nav-options {\r\n        float: right;\r\n        margin: 0 20px;\r\n        text-decoration: none;\r\n        padding: 10px;\n}\na:hover {\r\n        text-decoration: underline;\r\n        background-color: lightgrey;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -43568,6 +43568,7 @@ var match = String.prototype.match;
 var bigIntValueOf = typeof BigInt === 'function' ? BigInt.prototype.valueOf : null;
 var gOPS = Object.getOwnPropertySymbols;
 var symToString = typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol' ? Symbol.prototype.toString : null;
+var hasShammedSymbols = typeof Symbol === 'function' && typeof Symbol.iterator === 'object';
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 
 var gPO = (typeof Reflect === 'function' ? Reflect.getPrototypeOf : Object.getPrototypeOf) || (
@@ -43580,7 +43581,7 @@ var gPO = (typeof Reflect === 'function' ? Reflect.getPrototypeOf : Object.getPr
 
 var inspectCustom = __webpack_require__(/*! ./util.inspect */ "?4f7e").custom;
 var inspectSymbol = inspectCustom && isSymbol(inspectCustom) ? inspectCustom : null;
-var toStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol' ? Symbol.toStringTag : null;
+var toStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag !== 'undefined' ? Symbol.toStringTag : null;
 
 module.exports = function inspect_(obj, options, depth, seen) {
     var opts = options || {};
@@ -43670,8 +43671,8 @@ module.exports = function inspect_(obj, options, depth, seen) {
         return '[Function' + (name ? ': ' + name : ' (anonymous)') + ']' + (keys.length > 0 ? ' { ' + keys.join(', ') + ' }' : '');
     }
     if (isSymbol(obj)) {
-        var symString = symToString.call(obj);
-        return typeof obj === 'object' ? markBoxed(symString) : symString;
+        var symString = hasShammedSymbols ? String(obj).replace(/^(Symbol\(.*\))_[^)]*$/, '$1') : symToString.call(obj);
+        return typeof obj === 'object' && !hasShammedSymbols ? markBoxed(symString) : symString;
     }
     if (isElement(obj)) {
         var s = '<' + String(obj.nodeName).toLowerCase();
@@ -43774,6 +43775,9 @@ function isBoolean(obj) { return toStr(obj) === '[object Boolean]' && (!toString
 
 // Symbol and BigInt do have Symbol.toStringTag by spec, so that can't be used to eliminate false positives
 function isSymbol(obj) {
+    if (hasShammedSymbols) {
+        return obj && typeof obj === 'object' && obj instanceof Symbol;
+    }
     if (typeof obj === 'symbol') {
         return true;
     }
@@ -43981,17 +43985,28 @@ function arrObjKeys(obj, inspect) {
             xs[i] = has(obj, i) ? inspect(obj[i], obj) : '';
         }
     }
+    var syms = typeof gOPS === 'function' ? gOPS(obj) : [];
+    var symMap;
+    if (hasShammedSymbols) {
+        symMap = {};
+        for (var k = 0; k < syms.length; k++) {
+            symMap['$' + syms[k]] = syms[k];
+        }
+    }
+
     for (var key in obj) { // eslint-disable-line no-restricted-syntax
         if (!has(obj, key)) { continue; } // eslint-disable-line no-restricted-syntax, no-continue
         if (isArr && String(Number(key)) === key && key < obj.length) { continue; } // eslint-disable-line no-restricted-syntax, no-continue
-        if ((/[^\w$]/).test(key)) {
+        if (hasShammedSymbols && symMap['$' + key] instanceof Symbol) {
+            // this is to prevent shammed Symbols, which are stored as strings, from being included in the string key section
+            continue; // eslint-disable-line no-restricted-syntax, no-continue
+        } else if ((/[^\w$]/).test(key)) {
             xs.push(inspect(key, obj) + ': ' + inspect(obj[key], obj));
         } else {
             xs.push(key + ': ' + inspect(obj[key], obj));
         }
     }
     if (typeof gOPS === 'function') {
-        var syms = gOPS(obj);
         for (var j = 0; j < syms.length; j++) {
             if (isEnumerable.call(obj, syms[j])) {
                 xs.push('[' + inspect(syms[j]) + ']: ' + inspect(obj[syms[j]], obj));
