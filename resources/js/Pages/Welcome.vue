@@ -13,6 +13,7 @@
 </template>
 
 <script>
+console.log('hey');
     import MyLayout from '@/Layouts/MyLayout.vue'
 
     export default {
@@ -26,12 +27,8 @@
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .content {
-        margin-top: 60px;
-        text-align: center;
-    }
     .menu-options > a {
-        /*color: #42b983;*/
+        color: #42b983;
         margin: 20px;
     }
 

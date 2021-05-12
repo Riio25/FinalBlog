@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -11,8 +12,17 @@ class BlogController extends Controller
         return Inertia::render('Write');
     }
 
-    public function submitBlog(){
-        // save blog to data base
+    public function submitBlog(Request $request){
+        $title = $request->title;
+        $post = $request->blogpost;
+
+        $postTable = new Post();
+        $postTable->user_id = '1';
+        $postTable->post_title = $title;
+        $postTable->post = $post;
+        $postTable->save();
+
+        return Inertia::location('/read');
     }
 
     public function readIndex(){

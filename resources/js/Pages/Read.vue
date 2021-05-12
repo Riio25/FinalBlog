@@ -6,7 +6,10 @@
 </template>
 
 <script>
+    import MyLayout from "../Layouts/MyLayout";
+
     export default {
+        layout: MyLayout,
         name: "Read.vue",
         data(){
             return {
@@ -17,5 +20,6 @@
 </script>
 
 <style scoped>
+
 
 </style>

@@ -34,6 +34,7 @@ Route::get('/write', [BlogController::class, 'writeIndex']);
 Route::post('/write/submit', [BlogController::class, 'submitBlog']);
 
 Route::get('/read', [BlogController::class, 'readIndex']);
+Route::get('/read/{title}', [BlogController::class, 'showBlog']);
 
 Route::get('/register', [UserController::class, 'registerIndex']);
 Route::post('/register/submit', [UserController::class, 'registerUser']);

@@ -8,6 +8,7 @@ import { InertiaProgress } from '@inertiajs/progress';
 const el = document.getElementById('app');
 
 createApp({
+
     render: () =>
         h(InertiaApp, {
             initialPage: JSON.parse(el.dataset.page),
@@ -17,5 +18,7 @@ createApp({
     .mixin({ methods: { route } })
     .use(InertiaPlugin)
     .mount(el);
+
+
 
 InertiaProgress.init({ color: '#4B5563' });
