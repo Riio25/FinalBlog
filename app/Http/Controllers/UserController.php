@@ -8,7 +8,7 @@ use Inertia\Inertia;
 class UserController extends Controller
 {
     public function registerIndex(){
-        return Intertia::render('Register');
+        return Inertia::render('Register');
     }
 
     public function registerUser(){
