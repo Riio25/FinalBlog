@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <!-- What would you like to write about today? -->
-        <h1>{{ msg }}</h1>
+        <h1 class="title">{{ msg }}</h1>
         <div class="form_container">
             <form id="blog-post" @submit.prevent="form.post('/write/submit')">
                 <label for="post_title" class="" >Post Title</label>
@@ -52,19 +52,24 @@ import MyLayout from "../Layouts/MyLayout";
         max-width: 350px;
         margin: 0 auto;
     }
+    .title {
+        text-align: center;
+    }
     label{
         display: block;
     }
     input {
         margin-bottom: 15px;
         width: 200px;
+        height: 18px;
     }
     textarea {
         display: block;
-        margin: 0 auto;
         resize: none;
     }
     button {
         margin-top: 15px;
     }
+
+    @import "CSS/main.css";
 </style>
