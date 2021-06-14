@@ -1,0 +1,10 @@
+To Do:
+
+when click on blog title shows the blog post
+
+registration page
+registration submit creates user account
+
+login page
+
+while user is logged in displays users name in place of register/login

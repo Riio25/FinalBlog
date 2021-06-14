@@ -3,18 +3,22 @@
         <h1 class="title">{{ msg }}</h1>
 
         <read-table v-bind:rows="rows"></read-table>
+        <read-post></read-post>
 
     </div>
 </template>
 
+
 <script>
     import MyLayout from "../Layouts/MyLayout";
     import ReadTable from "@/Pages/ReadTable";
+    import ReadPost from "@/Pages/ReadPost";
 
     export default {
         layout: MyLayout,
         components: {
-            ReadTable
+            ReadTable,
+            ReadPost
         },
         props: {
             rows: Array
@@ -28,6 +32,8 @@
             }
         }
     }
+
+
 </script>
 
 <style scoped>
