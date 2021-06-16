@@ -1,6 +1,6 @@
 To Do:
 
-when click on blog title shows the blog post
+when click on blog title shows the blog post (create route where the control returns the new component via inertia)
 
 registration page
 registration submit creates user account
