@@ -1,13 +1,17 @@
 <template >
-    <h1 v-if="false">Hi There!</h1>
-    <p>post spot</p>
+    <p>{{ body }}</p>
 </template>
 
 <script>
-    export default {
-        name: "read-post.vue",
-        props: ['rows']
-    }
+import Read from "@/Pages/Read";
+
+export default {
+    name: "read-post.vue",
+    props: ['body'],
+
+}
+
+
 </script>
 
 <style scoped>

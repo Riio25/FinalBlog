@@ -28,6 +28,7 @@
         "vue-loader": "^16.1.2"
     },
     "dependencies": {
+        "axios-auth-refresh": "^3.1.0",
         "node-sass": "^5.0.0",
         "sass-loader": "^11.0.1"
     }

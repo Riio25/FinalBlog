@@ -8,7 +8,13 @@ window._ = require('lodash');
 
 window.axios = require('axios');
 
+
+// let user_token = document.querySelector('meta')
+
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+// window.axios.defaults.headers.common['Authorization'] = `Bearer ${user_token}`;
+
+
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

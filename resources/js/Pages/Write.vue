@@ -1,9 +1,9 @@
 <template>
     <div class="content">
-        <!-- What would you like to write about today? -->
         <h1 class="title">{{ msg }}</h1>
         <div class="form_container">
             <form id="blog-post" @submit.prevent="form.post('/write/submit')">
+                <csrf-token-input />
                 <label for="post_title" class="" >Post Title</label>
                 <input id="post_title" type="text" name="title" v-model="form.title" />
                 <textarea
