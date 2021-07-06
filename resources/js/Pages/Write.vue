@@ -3,7 +3,6 @@
         <h1 class="title">{{ msg }}</h1>
         <div class="form_container">
             <form id="blog-post" @submit.prevent="form.post('/write/submit')">
-                <csrf-token-input />
                 <label for="post_title" class="" >Post Title</label>
                 <input id="post_title" type="text" name="title" v-model="form.title" />
                 <textarea
@@ -21,28 +20,43 @@
 </template>
 
 <script>
-import { useForm } from '@inertiajs/inertia-vue3'
+import { useForm, usePage } from '@inertiajs/inertia-vue3';
+import { computed } from 'vue';
 import MyLayout from "../Layouts/MyLayout";
 
     export default {
         layout: MyLayout,
         computed: {},
+        // mounted() { console.log(this.$page.props.xsrf_token) },
         setup(){
+            const theForm = computed(() => usePage().props.value)
             const form = useForm({
                 title: null,
                 blogpost: null,
+                // _token: this.$page.props.csrf_token,
             })
-            return  {form}
+            const submit = () => {
+                this.form
+                    .transform(data => (
+                        data
+                    ))
+                    .post(this.route('write'), {})
+
+            }
+            console.log(theForm);
+            return  {form, submit}
         },
 
         data(){
             return {
+                form: this.$inertia.form({
+                    title: null,
+                    blogpost: null
+                }),
                 msg: "What would you like to write about??"
             }
         }
     };
-
-
 
 </script>
 

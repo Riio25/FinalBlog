@@ -31,7 +31,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/write', [BlogController::class, 'writeIndex']);
-Route::post('/write/submit', [BlogController::class, 'submitBlog']);
+Route::post('/write/submit', [BlogController::class, 'submitBlog'])->name('write');
 
 Route::get('/read', [BlogController::class, 'readIndex']);
 Route::get('/read/{title}', [BlogController::class, 'showBlog']);

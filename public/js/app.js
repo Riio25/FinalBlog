@@ -18572,23 +18572,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
-/* harmony import */ var _Layouts_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layouts/MyLayout */ "./resources/js/Layouts/MyLayout.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _Layouts_MyLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Layouts/MyLayout */ "./resources/js/Layouts/MyLayout.vue");
+
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  layout: _Layouts_MyLayout__WEBPACK_IMPORTED_MODULE_1__.default,
+  layout: _Layouts_MyLayout__WEBPACK_IMPORTED_MODULE_2__.default,
   computed: {},
+  // mounted() { console.log(this.$page.props.xsrf_token) },
   setup: function setup() {
+    var _this = this;
+
+    var theForm = (0,vue__WEBPACK_IMPORTED_MODULE_1__.computed)(function () {
+      return (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.value;
+    });
     var form = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.useForm)({
       title: null,
-      blogpost: null
+      blogpost: null // _token: this.$page.props.csrf_token,
+
     });
+
+    var submit = function submit() {
+      _this.form.transform(function (data) {
+        return data;
+      }).post(_this.route('write'), {});
+    };
+
+    console.log(theForm);
     return {
-      form: form
+      form: form,
+      submit: submit
     };
   },
   data: function data() {
     return {
+      form: this.$inertia.form({
+        title: null,
+        blogpost: null
+      }),
       msg: "What would you like to write about??"
     };
   }
@@ -23357,39 +23379,37 @@ var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_csrf_token_input = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("csrf-token-input");
-
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.msg), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
     id: "blog-post",
     onSubmit: _cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
-      return $setup.form.post('/write/submit');
+      return $data.form.post('/write/submit');
     }, ["prevent"]))
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_csrf_token_input), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     id: "post_title",
     type: "text",
     name: "title",
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
-      return $setup.form.title = $event;
+      return $data.form.title = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.title]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("textarea", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.title]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("textarea", {
     name: "content",
     id: "blog-content",
     cols: "40",
     rows: "8",
     placeholder: "Start Writing...",
     "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
-      return $setup.form.blogpost = $event;
+      return $data.form.blogpost = $event;
     })
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.blogpost]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.blogpost]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
     id: "submit_btn",
     type: "submit",
-    disabled: $setup.form.processing
+    disabled: $data.form.processing
   }, "Submit", 8
   /* PROPS */
   , ["disabled"])], 32
@@ -23453,6 +23473,7 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"); // let user_token = document.querySelector('meta')
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'; // window.axios.defaults.headers.common['Authorization'] = `Bearer ${user_token}`;
+// window.axios.defaults.headers.common['X-CSRF-TOKEN'] = window.Laravel.csrfToken;
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
