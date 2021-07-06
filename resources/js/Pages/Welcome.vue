@@ -13,7 +13,6 @@
 </template>
 
 <script>
-console.log('hey');
     import MyLayout from '@/Layouts/MyLayout.vue'
 
     export default {

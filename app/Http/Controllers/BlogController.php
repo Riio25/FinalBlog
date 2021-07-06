@@ -35,7 +35,6 @@ class BlogController extends Controller
             $t = strtotime($post->created_at);
             $rows[] = [
                 'title'=>$post->post_title,
-                'post' => $post->post,
                 'author' => $author->name,
                 'date' => date('m-d-y', $t)
             ];
