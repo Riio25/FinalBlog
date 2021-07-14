@@ -1,4 +1,5 @@
 require('./bootstrap');
+import "tailwindcss/tailwind.css";
 
 // Import modules...
 import { createApp, h } from 'vue';

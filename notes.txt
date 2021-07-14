@@ -1,4 +1,25 @@
+Acceptance Criteria:
+    Users can register on the site
+        Create registration page
+            Create component
+                Form validation
+            Create route
+                Middleware?
+            Create controller
+                Function show page
+                Function register user
+
+    Users can log into a created user
+    Users can create posts that are saved to the database with:
+        User that created the post
+        Post title
+        Post content
+        Date Post was created
+    Users can read posts pulled from database
+
 To Do:
+
+middleware on post page
 
 when click on blog title shows the blog post
 
@@ -8,3 +29,12 @@ registration submit creates user account
 login page
 
 while user is logged in displays users name in place of register/login
+
+Notes:
+
+Check out Spatie for user role classes.
+
+(Could not get Tailwind Styles to work)
+Use Tailwind for css. NO MORE STYLES
+
+calendar july 26th pairing, compare notes.
