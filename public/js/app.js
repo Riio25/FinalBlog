@@ -23633,7 +23633,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#nav-menu[data-v-41a7037a] {\n        font-family: Avenir, Helvetica, Arial, sans-serif;\n        -webkit-font-smoothing: antialiased;\n        -moz-osx-font-smoothing: grayscale;\n        text-align: center;\n        color: #2c3e50;\n}\n.nav[data-v-41a7037a] {\n        position: fixed;\n        top: 0;\n        left: 0;\n        padding-top: 10px;\n        width: 100%;\n}\n.nav a[data-v-41a7037a] {\n        font-weight: bold;\n        color: #2c3e50;\n}\n.nav-options[data-v-41a7037a] {\n        float: right;\n        margin: 0 20px;\n        text-decoration: none;\n        padding: 10px;\n}\na[data-v-41a7037a]:hover {\n        text-decoration: underline;\n        background-color: lightgrey;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#nav-menu[data-v-41a7037a] {\r\n        font-family: Avenir, Helvetica, Arial, sans-serif;\r\n        -webkit-font-smoothing: antialiased;\r\n        -moz-osx-font-smoothing: grayscale;\r\n        text-align: center;\r\n        color: #2c3e50;\n}\n.nav[data-v-41a7037a] {\r\n        position: fixed;\r\n        top: 0;\r\n        left: 0;\r\n        padding-top: 10px;\r\n        width: 100%;\n}\n.nav a[data-v-41a7037a] {\r\n        font-weight: bold;\r\n        color: #2c3e50;\n}\n.nav-options[data-v-41a7037a] {\r\n        float: right;\r\n        margin: 0 20px;\r\n        text-decoration: none;\r\n        padding: 10px;\n}\na[data-v-41a7037a]:hover {\r\n        text-decoration: underline;\r\n        background-color: lightgrey;\n}\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23660,7 +23660,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_use_1_public_css_main_css__WEBPACK_IMPORTED_MODULE_1__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.title[data-v-53a915bf]{\n        text-align: center;\n}\n\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.title[data-v-53a915bf]{\r\n        text-align: center;\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23684,7 +23684,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\ntable[data-v-4adaf47f] {\n        margin: 0 auto;\n        border-collapse: collapse;\n        border: solid black 3px;\n        table-layout: fixed;\n}\nthead[data-v-4adaf47f]{\n        background: #42b983;\n        border-bottom: 2px solid black;\n        display: table-header-group;\n}\nthead tr .table-title[data-v-4adaf47f], thead tr .table-author[data-v-4adaf47f], thead tr .table-date[data-v-4adaf47f] {\n         padding-top: 10px;\n         padding-bottom: 10px;\n}\n.table-title[data-v-4adaf47f]{\n        padding-right: 60px;\n}\n.table-author[data-v-4adaf47f]{\n        padding-right: 40px;\n}\ntbody td[data-v-4adaf47f] {\n        margin-bottom: 15px;\n}\ntbody tr td[data-v-4adaf47f] {\n        padding-top: 10px;\n}\ntbody tr td[data-v-4adaf47f]:nth-child(odd){\n        padding: 0 20px;\n}\ntr[data-v-4adaf47f]:nth-child(even){\n        background: #a0aec0;\n}\n\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\ntable[data-v-4adaf47f] {\r\n        margin: 0 auto;\r\n        border-collapse: collapse;\r\n        border: solid black 3px;\r\n        table-layout: fixed;\n}\nthead[data-v-4adaf47f]{\r\n        background: #42b983;\r\n        border-bottom: 2px solid black;\r\n        display: table-header-group;\n}\nthead tr .table-title[data-v-4adaf47f], thead tr .table-author[data-v-4adaf47f], thead tr .table-date[data-v-4adaf47f] {\r\n         padding-top: 10px;\r\n         padding-bottom: 10px;\n}\n.table-title[data-v-4adaf47f]{\r\n        padding-right: 60px;\n}\n.table-author[data-v-4adaf47f]{\r\n        padding-right: 40px;\n}\ntbody td[data-v-4adaf47f] {\r\n        margin-bottom: 15px;\n}\ntbody tr td[data-v-4adaf47f] {\r\n        padding-top: 10px;\n}\ntbody tr td[data-v-4adaf47f]:nth-child(odd){\r\n        padding: 0 20px;\n}\ntr[data-v-4adaf47f]:nth-child(even){\r\n        background: #a0aec0;\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23711,7 +23711,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_use_1_public_css_main_css__WEBPACK_IMPORTED_MODULE_1__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.menu-options > a[data-v-317d1a6e] {\n        color: #42b983;\n        margin: 20px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.menu-options > a[data-v-317d1a6e] {\r\n        color: #42b983;\r\n        margin: 20px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23738,7 +23738,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_use_1_public_css_main_css__WEBPACK_IMPORTED_MODULE_1__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.form_container[data-v-12a4d086] {\n        max-width: 350px;\n        margin: 0 auto;\n}\n.title[data-v-12a4d086] {\n        text-align: center;\n}\nlabel[data-v-12a4d086]{\n        display: block;\n}\ninput[data-v-12a4d086] {\n        margin-bottom: 15px;\n        width: 200px;\n        height: 18px;\n}\ntextarea[data-v-12a4d086] {\n        display: block;\n        resize: none;\n}\nbutton[data-v-12a4d086] {\n        margin-top: 15px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.form_container[data-v-12a4d086] {\r\n        max-width: 350px;\r\n        margin: 0 auto;\n}\n.title[data-v-12a4d086] {\r\n        text-align: center;\n}\nlabel[data-v-12a4d086]{\r\n        display: block;\n}\ninput[data-v-12a4d086] {\r\n        margin-bottom: 15px;\r\n        width: 200px;\r\n        height: 18px;\n}\ntextarea[data-v-12a4d086] {\r\n        display: block;\r\n        resize: none;\n}\nbutton[data-v-12a4d086] {\r\n        margin-top: 15px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
