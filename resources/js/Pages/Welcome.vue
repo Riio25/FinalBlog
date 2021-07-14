@@ -4,8 +4,8 @@
             <h1>{{ msg }}</h1>
             <p>What would you like to do?</p>
             <div class="menu-options">
-                <a href="/write" data-ajax="false">Write</a> |
-                <a href="/read">Read</a>
+                <inertia-link  href="/write" data-ajax="false">Write</inertia-link> |
+                <inertia-link href="/read">Read</inertia-link>
             </div>
             <!--            <router-view />-->
         </div>
@@ -13,7 +13,6 @@
 </template>
 
 <script>
-console.log('hey');
     import MyLayout from '@/Layouts/MyLayout.vue'
 
     export default {

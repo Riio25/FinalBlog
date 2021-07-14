@@ -1,5 +1,5 @@
 <template>
-    <table v-if="rows" id="read_table">
+    <table id="read_table">
         <thead>
         <tr>
             <th class="table-title">Title</th>
@@ -9,7 +9,7 @@
         </thead>
         <tbody>
         <tr v-for="row in rows">
-            <td class="table-title"><a href="#">{{row.title}}</a></td>
+            <td class="table-title"><inertia-link v-bind:href="'read/' + row.title" >{{row.title}}</inertia-link></td>
             <td class="table-author">{{row.author}}</td>
             <td class="table-date">{{row.date}}</td>
         </tr>

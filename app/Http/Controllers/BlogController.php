@@ -31,10 +31,10 @@ class BlogController extends Controller
         $rows = [];
         foreach ($posts as $post){
             $author = User::where('id', $post->user_id)->first();
+
             $t = strtotime($post->created_at);
             $rows[] = [
                 'title'=>$post->post_title,
-                'post' => $post->post,
                 'author' => $author->name,
                 'date' => date('m-d-y', $t)
             ];
@@ -42,12 +42,22 @@ class BlogController extends Controller
         }
 
         return Inertia::render('Read', [
-            'rows' => $rows
+            'rows' => $rows,
+            'showTable' => true,
+            'msg' => 'What would you like to read about?'
         ]);
     }
 
-    public function showBlog(){
-        // show selected blog
+    public function showBlog($title){
+
+        $post = Post::where('post_title', $title)->first();
+
+
+        return Inertia::render('Read',[
+            'showTable' => false,
+            'msg' => $post->post_title,
+            'body' => $post->post,
+        ]);
     }
 
 

@@ -2,8 +2,9 @@
     <div class="content">
         <h1 class="title">{{ msg }}</h1>
 
-        <read-table v-bind:rows="rows"></read-table>
-        <read-post></read-post>
+        <read-table v-if="showTable === true" v-bind:rows="rows"></read-table>
+        <read-post v-else v-bind:body="body"></read-post>
+
 
     </div>
 </template>
@@ -21,13 +22,15 @@
             ReadPost
         },
         props: {
-            rows: Array
+            rows: Array,
+            showTable: Boolean,
+            msg: String,
+            body: String
         },
         name: "Read.vue",
 
         data(){
             return {
-                msg: "What would you like to read about?",
 
             }
         }
