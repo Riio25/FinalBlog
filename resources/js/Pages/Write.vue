@@ -13,7 +13,7 @@
                     placeholder="Start Writing..."
                     v-model="form.blogpost"
                 ></textarea>
-                <button id="submit_btn" type="submit" :disabled="form.processing">Submit</button>
+                <button class="text-2xl" id="submit_btn" type="submit" :disabled="form.processing">Submit</button>
             </form>
         </div>
     </div>

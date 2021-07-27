@@ -39,4 +39,4 @@ Route::get('/read/{title}', [BlogController::class, 'showBlog']);
 Route::get('/register', [UserController::class, 'registerIndex']);
 Route::post('/register/submit', [UserController::class, 'registerUser']);
 
-Route::get('/login', [UserController::class, 'loginIndex']);
+Route::get('/login', [UserController::class, 'loginIndex'])->name('login');
