@@ -27,7 +27,7 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    return Inertia::render('Welcome');
 })->name('dashboard');
 
 Route::get('/write', [BlogController::class, 'writeIndex']);
@@ -36,7 +36,8 @@ Route::post('/write/submit', [BlogController::class, 'submitBlog'])->name('write
 Route::get('/read', [BlogController::class, 'readIndex']);
 Route::get('/read/{title}', [BlogController::class, 'showBlog']);
 
-Route::get('/register', [UserController::class, 'registerIndex']);
-Route::post('/register/submit', [UserController::class, 'registerUser']);
+Route::get('/register', [UserController::class, 'registerIndex'])->name('register');
+Route::post('/register/submit', [UserController::class, 'registerUser'])->name('register_submit');
 
 Route::get('/login', [UserController::class, 'loginIndex'])->name('login');
+
